@@ -399,7 +399,7 @@ func permutation20(subdomain string, domain string) ([]string) {
 func main() {
 	input := flag.String("input", "", "Contains the file with a list of known subdomains for the domain")
 	output := flag.String("output", "", "Is a file that will contain the massive list of altered and permuted subdomains")
-	words := flag.String("words", "words.txt", "Is your list of words that you'd like to permute your current subdomains for the domain, default is words.txt")
+	words := flag.String("words", "words.txt", "Is your list of words that you'd like to permute your current subdomains for the domain.")
 	flag.Parse()
 
 	if *input == "" || *output == "" || *words == "" {
