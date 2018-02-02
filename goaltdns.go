@@ -25,7 +25,7 @@ func importwordsfromfile(filename string) ([]string) {
 }
 
 func sortfileunique(filename string) {
-	command := []string{"sort", "--parallel=2", "-u", filename, "-o", filename}
+	command := []string{"sort", "-u", filename, "-o", filename}
 	cmd := exec.Command(command[0], command[1:]...)
 	cmd.Env = append(os.Environ(), "LC_ALL=C")
 	cmd.Stdout = os.Stdout
@@ -399,7 +399,7 @@ func permutation20(subdomain string, domain string) ([]string) {
 func main() {
 	input := flag.String("input", "", "Contains the file with a list of known subdomains for the domain")
 	output := flag.String("output", "", "Is a file that will contain the massive list of altered and permuted subdomains")
-	words := flag.String("words", "", "Is your list of words that you'd like to permute your current subdomains for the domain")
+	words := flag.String("words", "words.txt", "Is your list of words that you'd like to permute your current subdomains for the domain, default is words.txt")
 	flag.Parse()
 
 	if *input == "" || *output == "" || *words == "" {
