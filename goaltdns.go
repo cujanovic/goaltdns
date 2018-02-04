@@ -25,7 +25,7 @@ func importwordsfromfile(filename string) ([]string) {
 }
 
 func sortfileunique(filename string) {
-	command := []string{"sort", "-u", filename, "-o", filename}
+	command := []string{"sort", "-u", "--parallel=2", filename, "-o", filename}
 	cmd := exec.Command(command[0], command[1:]...)
 	cmd.Env = append(os.Environ(), "LC_ALL=C")
 	cmd.Stdout = os.Stdout
