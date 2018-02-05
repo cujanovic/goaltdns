@@ -79,28 +79,6 @@ func permutation4(word string, subdomain string, domain string) (string) {
 	return buff.String()
 }
 
-//word_subdomain.domain
-func permutation5(word string, subdomain string, domain string) (string) {
-	var buff bytes.Buffer
-	buff.WriteString(word)
-	buff.WriteString("_")
-	buff.WriteString(subdomain)
-	buff.WriteString(".")
-	buff.WriteString(domain)
-	return buff.String()
-}
-
-//subdomain_word.domain
-func permutation6(word string, subdomain string, domain string) (string) {
-	var buff bytes.Buffer
-	buff.WriteString(subdomain)
-	buff.WriteString("_")
-	buff.WriteString(word)
-	buff.WriteString(".")
-	buff.WriteString(domain)
-	return buff.String()
-}
-
 //wordsubdomain.domain
 func permutation7(word string, subdomain string, domain string) (string) {
 	var buff bytes.Buffer
@@ -449,10 +427,6 @@ func main() {
 						writter.Flush()
 						writter.WriteString(permutation4(wordslines[i], subdomainlinefragmentdot[j], domain)+"\n")
 						writter.Flush()
-						writter.WriteString(permutation5(wordslines[i], subdomainlinefragmentdot[j], domain)+"\n")
-						writter.Flush()
-						writter.WriteString(permutation6(wordslines[i], subdomainlinefragmentdot[j], domain)+"\n")
-						writter.Flush()
 						writter.WriteString(permutation7(wordslines[i], subdomainlinefragmentdot[j], domain)+"\n")
 						writter.Flush()
 						writter.WriteString(permutation8(wordslines[i], subdomainlinefragmentdot[j], domain)+"\n")
@@ -535,10 +509,6 @@ func main() {
 					writter.WriteString(permutation3(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
 					writter.WriteString(permutation4(wordslines[i], subdomainline, domain)+"\n")
-					writter.Flush()
-					writter.WriteString(permutation5(wordslines[i], subdomainline, domain)+"\n")
-					writter.Flush()
-					writter.WriteString(permutation6(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
 					writter.WriteString(permutation7(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
@@ -625,10 +595,6 @@ func main() {
 						writter.Flush()
 						writter.WriteString(permutation4(wordslines[i], subdomainlinefragmentdash[j], domain)+"\n")
 						writter.Flush()
-						writter.WriteString(permutation5(wordslines[i], subdomainlinefragmentdash[j], domain)+"\n")
-						writter.Flush()
-						writter.WriteString(permutation6(wordslines[i], subdomainlinefragmentdash[j], domain)+"\n")
-						writter.Flush()
 						writter.WriteString(permutation7(wordslines[i], subdomainlinefragmentdash[j], domain)+"\n")
 						writter.Flush()
 						writter.WriteString(permutation8(wordslines[i], subdomainlinefragmentdash[j], domain)+"\n")
@@ -711,10 +677,6 @@ func main() {
 					writter.WriteString(permutation3(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
 					writter.WriteString(permutation4(wordslines[i], subdomainline, domain)+"\n")
-					writter.Flush()
-					writter.WriteString(permutation5(wordslines[i], subdomainline, domain)+"\n")
-					writter.Flush()
-					writter.WriteString(permutation6(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
 					writter.WriteString(permutation7(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
@@ -801,10 +763,6 @@ func main() {
 						writter.Flush()
 						writter.WriteString(permutation4(wordslines[i], subdomainlinefragmentunderscore[j], domain)+"\n")
 						writter.Flush()
-						writter.WriteString(permutation5(wordslines[i], subdomainlinefragmentunderscore[j], domain)+"\n")
-						writter.Flush()
-						writter.WriteString(permutation6(wordslines[i], subdomainlinefragmentunderscore[j], domain)+"\n")
-						writter.Flush()
 						writter.WriteString(permutation7(wordslines[i], subdomainlinefragmentunderscore[j], domain)+"\n")
 						writter.Flush()
 						writter.WriteString(permutation8(wordslines[i], subdomainlinefragmentunderscore[j], domain)+"\n")
@@ -888,10 +846,6 @@ func main() {
 					writter.Flush()
 					writter.WriteString(permutation4(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
-					writter.WriteString(permutation5(wordslines[i], subdomainline, domain)+"\n")
-					writter.Flush()
-					writter.WriteString(permutation6(wordslines[i], subdomainline, domain)+"\n")
-					writter.Flush()
 					writter.WriteString(permutation7(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
 					writter.WriteString(permutation8(wordslines[i], subdomainline, domain)+"\n")
@@ -974,10 +928,6 @@ func main() {
 					writter.WriteString(permutation3(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
 					writter.WriteString(permutation4(wordslines[i], subdomainline, domain)+"\n")
-					writter.Flush()
-					writter.WriteString(permutation5(wordslines[i], subdomainline, domain)+"\n")
-					writter.Flush()
-					writter.WriteString(permutation6(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
 					writter.WriteString(permutation7(wordslines[i], subdomainline, domain)+"\n")
 					writter.Flush()
