@@ -103,7 +103,7 @@ func permutation8(word string, subdomain string, domain string) (string) {
 func permutation9(word string, subdomain string, domain string) ([]string) {
 	var buff bytes.Buffer
 	var strings1 []string
-	for k := 0; k < 13; k++ {
+	for k := 1; k < 10; k++ {
 		number := strconv.Itoa(k)
 		buff.WriteString(word)
 		buff.WriteString("-")
@@ -123,7 +123,7 @@ func permutation9(word string, subdomain string, domain string) ([]string) {
 func permutation10(word string, subdomain string, domain string) ([]string) {
 	var buff bytes.Buffer
 	var strings1 []string
-	for k := 0; k < 13; k++ {
+	for k := 1; k < 10; k++ {
 		number := strconv.Itoa(k)
 		buff.WriteString(number)
 		buff.WriteString("-")
@@ -143,7 +143,7 @@ func permutation10(word string, subdomain string, domain string) ([]string) {
 func permutation11(word string, subdomain string, domain string) ([]string) {
 	var buff bytes.Buffer
 	var strings1 []string
-	for k := 0; k < 13; k++ {
+	for k := 1; k < 10; k++ {
 		number := strconv.Itoa(k)
 		buff.WriteString(word)
 		buff.WriteString(".")
@@ -163,7 +163,7 @@ func permutation11(word string, subdomain string, domain string) ([]string) {
 func permutation12(word string, subdomain string, domain string) ([]string) {
 	var buff bytes.Buffer
 	var strings1 []string
-	for k := 0; k < 13; k++ {
+	for k := 1; k < 10; k++ {
 		number := strconv.Itoa(k)
 		buff.WriteString(number)
 		buff.WriteString(".")
@@ -183,7 +183,7 @@ func permutation12(word string, subdomain string, domain string) ([]string) {
 func permutation13(word string, subdomain string, domain string) ([]string) {
 	var buff bytes.Buffer
 	var strings1 []string
-	for k := 0; k < 13; k++ {
+	for k := 1; k < 10; k++ {
 		number := strconv.Itoa(k)
 		buff.WriteString(subdomain)
 		buff.WriteString(".")
@@ -203,7 +203,7 @@ func permutation13(word string, subdomain string, domain string) ([]string) {
 func permutation14(word string, subdomain string, domain string) ([]string) {
 	var buff bytes.Buffer
 	var strings1 []string
-	for k := 0; k < 13; k++ {
+	for k := 1; k < 10; k++ {
 		number := strconv.Itoa(k)
 		buff.WriteString(subdomain)
 		buff.WriteString(".")
@@ -223,7 +223,7 @@ func permutation14(word string, subdomain string, domain string) ([]string) {
 func permutation15(word string, subdomain string, domain string) ([]string) {
 	var buff bytes.Buffer
 	var strings1 []string
-	for k := 0; k < 13; k++ {
+	for k := 1; k < 10; k++ {
 		number := strconv.Itoa(k)
 		buff.WriteString(subdomain)
 		buff.WriteString(".")
@@ -243,7 +243,7 @@ func permutation15(word string, subdomain string, domain string) ([]string) {
 func permutation16(word string, subdomain string, domain string) ([]string) {
 	var buff bytes.Buffer
 	var strings1 []string
-	for k := 0; k < 13; k++ {
+	for k := 1; k < 10; k++ {
 		number := strconv.Itoa(k)
 		buff.WriteString(subdomain)
 		buff.WriteString(".")
@@ -269,7 +269,7 @@ func permutation17(subdomain string, domain string) ([]string) {
 	}
 	if matched == true {
 		subdomainnumber := subdomain[len(subdomain) - 1:]
-		for k := 0; k < 13; k++ {
+		for k := 1; k < 10; k++ {
 			number := strconv.Itoa(k)
 			if subdomainnumber != number {
 				buff.WriteString(subdomain[:len(subdomain) - 1])
@@ -297,7 +297,7 @@ func permutation18(subdomain string, domain string) ([]string) {
 	}
 	if matched == true {
 		subdomainnumber := subdomain[len(subdomain) - 1:]
-		for k := 0; k < 13; k++ {
+		for k := 1; k < 10; k++ {
 			number := strconv.Itoa(k)
 			if subdomainnumber != number {
 				buff.WriteString(subdomain[:len(subdomain) - 1])
@@ -326,7 +326,7 @@ func permutation19(subdomain string, domain string) ([]string) {
 	}
 	if matched == true {
 		subdomainnumber := subdomain[0:1]
-		for k := 0; k < 13; k++ {
+		for k := 1; k < 10; k++ {
 			number := strconv.Itoa(k)
 			if subdomainnumber != number {
 				buff.WriteString(number)
@@ -354,7 +354,7 @@ func permutation20(subdomain string, domain string) ([]string) {
 	}
 	if matched == true {
 		subdomainnumber := subdomain[0:1]
-		for k := 0; k < 13; k++ {
+		for k := 1; k < 10; k++ {
 			number := strconv.Itoa(k)
 			if subdomainnumber != number {
 				buff.WriteString(number)
