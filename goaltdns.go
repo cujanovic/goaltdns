@@ -12,6 +12,7 @@ import (
 	"strconv"
 	"regexp"
 	"github.com/joeguo/tldextract"
+	"runtime"
 )
 
 func importwordsfromfile(filename string) ([]string) {
@@ -25,7 +26,8 @@ func importwordsfromfile(filename string) ([]string) {
 }
 
 func sortfileunique(filename string) {
-	command := []string{"sort", "-u", "--parallel=2", filename, "-o", filename}
+	cores := runtime.NumCPU()
+	command := []string{"sort", "-u", "--parallel="+strconv.Itoa(cores), filename, "-o", filename}
 	cmd := exec.Command(command[0], command[1:]...)
 	cmd.Env = append(os.Environ(), "LC_ALL=C")
 	cmd.Stdout = os.Stdout
